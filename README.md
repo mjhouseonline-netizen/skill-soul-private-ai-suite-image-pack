@@ -12,7 +12,7 @@ It is designed to hold both Windows and Mac image-pack release tracks in one pla
 ## Repo layout
 
 - `windows/` - current Windows image-pack instructions and helper scripts
-- `mac/` - placeholder for future Mac image-pack instructions and helper scripts
+- `mac/` - Mac image-pack instructions, helper scripts, and release templates
 
 ## Important GitHub size note
 
@@ -53,4 +53,4 @@ Keep Windows and Mac assets in separate releases so customers do not mix instruc
 
 The current shipping image pack is Windows-oriented because the included instructions target `ComfyUI_windows_portable` and the helper script is a `.bat` file.
 
-The Mac side of this repo is a placeholder until a Mac-specific image backend and install flow are ready.
+The Mac side of this repo now contains the starter install flow and expected folder layout, but it still needs real Mac backend binaries and model assets before it becomes a shippable release.

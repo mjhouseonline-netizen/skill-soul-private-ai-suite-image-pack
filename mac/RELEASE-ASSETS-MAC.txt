@@ -1,0 +1,15 @@
+Recommended GitHub Release assets for the Mac image pack
+
+- README-IMAGE-PACK-MAC.md
+- INSTALL-IMAGE-PACK-MAC.sh
+- image-backend-bin-mac.zip
+- any extra model archives if the backend bundle is split
+
+Suggested release tag:
+- v1.0.0-image-pack-mac
+
+Notes:
+- Keep Mac assets separate from the Windows image-pack release.
+- Do not mix .bat and .sh install instructions in the same release.
+- The current workstation app expects the extracted backend files to land in:
+  ~/.offline-ai-workstation/image-backend
