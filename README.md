@@ -1,12 +1,18 @@
 # Skill & Soul Private AI Suite Image Pack
 
 This repository is the separate home for the optional image generation pack used by Skill & Soul Private AI Suite.
+It is designed to hold both Windows and Mac image-pack release tracks in one place.
 
 ## What this repo is for
 
-- Hold the image-pack instructions
-- Hold lightweight helper files such as the checkpoint reassembly script
+- Hold platform-specific image-pack instructions
+- Hold lightweight helper files such as reassembly scripts
 - Publish the actual image pack as GitHub Release assets
+
+## Repo layout
+
+- `windows/` - current Windows image-pack instructions and helper scripts
+- `mac/` - placeholder for future Mac image-pack instructions and helper scripts
 
 ## Important GitHub size note
 
@@ -19,23 +25,32 @@ Do not try to commit these files into the repository history:
 
 Instead, upload them to a GitHub Release for this repo.
 
-## Recommended release assets
+## Recommended release structure
 
-- `README-IMAGE-PACK.txt`
-- `REASSEMBLE-CHECKPOINT.bat`
+- Release: `v1.0.0-image-pack-windows`
+- Release: `v1.0.0-image-pack-mac`
+
+Keep Windows and Mac assets in separate releases so customers do not mix instructions or files.
+
+## Current Windows release assets
+
+- `windows/README-IMAGE-PACK-WINDOWS.txt`
+- `windows/REASSEMBLE-CHECKPOINT.bat`
 - `Skill-Soul-Private-AI-Suite-Image-Pack-Base.zip`
 - `SSD-1B-modelspec.part1`
 - `SSD-1B-modelspec.part2`
 - `SSD-1B-modelspec.part3`
 
-## Customer flow
+## Windows customer flow
 
 1. Download every file from the Image Pack release.
 2. Extract `Skill-Soul-Private-AI-Suite-Image-Pack-Base.zip`.
-3. Move the `.part` files and `REASSEMBLE-CHECKPOINT.bat` into the checkpoints folder from the extracted package.
+3. Move the `.part` files and `windows/REASSEMBLE-CHECKPOINT.bat` into the checkpoints folder from the extracted package.
 4. Run `REASSEMBLE-CHECKPOINT.bat`.
 5. Wait for the final checkpoint file to be rebuilt.
 
 ## Current platform scope
 
-This image pack is currently Windows-oriented because the included instructions target `ComfyUI_windows_portable` and the helper script is a `.bat` file.
+The current shipping image pack is Windows-oriented because the included instructions target `ComfyUI_windows_portable` and the helper script is a `.bat` file.
+
+The Mac side of this repo is a placeholder until a Mac-specific image backend and install flow are ready.
